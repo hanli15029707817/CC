@@ -1,0 +1,131 @@
+#logo-all1{
+	width:100%;
+	background: red;
+	overflow: hidden;
+	background: url(../img/login-create-bg_080717.jpg) no-repeat;
+	background-size: cover;
+}
+#logoin{
+    width:50%;
+    background:#fff;
+    margin:5% auto;
+    padding:32px 16px 27px;
+}
+#logoin p:first-child{
+	font-weight: 100;
+    font-size: 28px;
+    color: #3f3f3f;
+    text-align: center;
+    line-height: 39px;
+}
+#logoin form{
+	width: 100%;
+    max-width: 450px;
+    margin: 16px auto;
+}
+#logoin form label{
+	display: block;
+	font-size: 12px;
+    letter-spacing: 2px;
+    margin: 0 0 8px;
+    color: #7e7e7e;
+    text-align: left;
+}
+#logoin form input{
+	width: 100%;
+    max-width: 450px;
+    border-radius: 4px;
+    border:1px solid #adadad;
+    padding:7px 10px;
+    box-sizing: border-box;
+}
+#logoin form span{
+	display: block;
+	width:100%;
+	padding-top:8px;
+	padding-bottom:8px;
+	font-size:12px;
+	color:red;
+}
+#emial{
+	width:100%;
+	padding-bottom:16px;
+}
+#pass{
+	padding-bottom:20px;
+}
+#logoin form a{
+	background:#ff3b7c;
+	padding:9px 10px;
+	display: block;
+	text-align: center;
+	color:#fff;
+}
+#logoin form a:hover{
+	background: #ee004f;
+}
+#forget-password{
+	text-align: center;
+    font-size: 12px;
+    display: block;
+    padding-top:20px;
+    color:red;
+    padding-bottom: 30px;
+}
+#creat{
+	width:100%;
+	border-top:1px solid #adadad;
+}
+#creat h3{
+	width:100%;
+	font-weight:100;
+    font-size: 28px;
+    color: #3f3f3f;
+    text-align: center;
+    line-height: 39px;
+    padding-top:40px;
+}
+#creat p{
+	font-size:12px;
+	padding-top:20px;
+	color:#3f3f3f;
+	padding-bottom: 30px;
+	text-align: center;
+}
+#creat input{
+	background:#ff3b7c;
+	padding:12px 25px;
+	border: 0;
+	width:100%;
+	max-width: 450px;
+	color:#fff;
+   margin: 0 auto;
+   display: block;
+}
+#creat input:hover{
+	background:#ee004f;
+}
+@media only screen and (min-width: 640px) and (max-width:1022px){
+	#logo-all1{
+		background:none;
+	}
+    #logoin{
+    width:100%;
+    padding:32px 10px 27px;
+    box-sizing: border-box;
+    }
+   #creat{
+	width:100%;
+   }
+}
+
+@media only screen and (max-width: 639px) {
+	#logo-all1{
+		background:none;
+	}
+     #logoin{
+    width:100%;
+    padding:32px 10px 27px;
+    box-sizing: border-box;
+    }
+}

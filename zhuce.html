@@ -13,31 +13,31 @@
 	<div id="logoin">
 		<p>创建Free People账户</p>
 		<p>欢迎访问！快捷创建账户，从现在开始。</p>
-		<form action="" method="post">
+		<form action="regsava.php" method="get">
 			<div id="username">
-				<label for="">名字（拼音）</label>
-			    <input type="text" value=""/>
+				<label for="">名字</label>
+			    <input type="text" value="" id="username1"/>
 			    <span id="msgname">
 			    	
 			    </span>
 			</div>
 			<div id="emial">
 				<label for="">电子邮箱地址/电话</label>
-			    <input type="text" value=""/>
+			    <input type="text" value="" name="userEmial" id="emial1" />
 			    <span id="msgemial">
 			    	
 			    </span>
 			</div>
 			<div id="pass">
 				<label for="">密码</label>
-			    <input type="password" value=""/>
+			    <input type="password" id="p1" value=""/>
 			    <span id="msgpass1">
 			    	
 			    </span>
 			</div>
 			<div id="pass2">
 				<label for="">重新输入密码</label>
-			    <input type="password" value=""/>
+			    <input type="password" value="" id="p2"/>
 			    <span id="msgpass2">
 			    	
 			    </span>
@@ -48,7 +48,7 @@
         	<span></span>
         	<p>是，为我订阅Free People电子邮件新闻、优惠和其他促销信息。我可以随时取消订阅。</p>
         </div>
-        <form action="" method="post" >
+        <form action="php/regsava.php" method="post" >
         	<input type="submit" name="" id="subm" value="创建Free People账户"/>
         </form>
 	</div>

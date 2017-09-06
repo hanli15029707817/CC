@@ -5,14 +5,14 @@ window.onload=function(){
 	var check3=false;
 	var check4=false;
 	var check5=false;
-	$("#username").find("input").blur(function(){
-		//账户名只能使用拼音
-		let reg=/[a-zA-Z]/;
-		let username=$("#username").find("input").val();
+	$("#username1").blur(function(){
+		let reg=/^[\u4e00-\u9fa5]/;
+		let username=$("#username1").val();
+		console.log(username);
 		//用户名需要做一次存在性验证运用ajax
 		if(reg.test(username)){
 			$.ajax({
-				url:"../php/checkuser.php",
+				url:"cheackuser.php",
 				async:true,
 				data:"username="+this.value,
 				type:"get",
@@ -20,13 +20,13 @@ window.onload=function(){
 					if(data=="1"){
 						$("#msgname").html("该用户已经注册过了");
 					}else{
-						$("msgname").html("该用户没人使用");
+						$("#msgname").html("√");
 					}
 				}
 			})
 			check1=true;
 		}else{
-			$("#msgname").html("请输入一个用户名只能是拼音");
+			$("#msgname").html("请输入中文字符");
 			check1=false;
 		}
 		return check1;
@@ -34,11 +34,11 @@ window.onload=function(){
     
     
     //电话邮箱验证
-   $("#emial").find("input").blur(function(){
-	   	let userEmial=$("#emial").find("input").val();
-		let reg=/(^1[0-9]{9}\d$)|\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/g;
+   $("#emial1").blur(function(){
+	   	let userEmial=$("#emial1").val();
+		let reg=/(^1[0-9]{9}\d$)|(^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$)/g;
 	   	if(reg.test(userEmial)){
-	   		$("#msgemial")[0].innerHTML="请填写下一步";
+	   		$("#msgemial")[0].innerHTML=" ";
 	   		check2=true;
 	   	}else{
 	   		$("#msgemial")[0].innerHTML="请输入一个有效的电子邮件或电话号码";
@@ -49,9 +49,9 @@ window.onload=function(){
     
     //密码验证
     
-    $("#pass").find("input").blur(function(){	
+    $("#p1").blur(function(){	
 		let reg=/^[0-9][0-9]{5}$/; 
-		var userPass=$("#pass").find("input").val();
+		var userPass=$("#p1").val();
 		if(reg.test(userPass)){
 			$("#msgpass1")[0].innerHTML="";
 			check3=true;
@@ -64,10 +64,10 @@ window.onload=function(){
     
     //第二次密码验证
     
-    $("#pass2").find("input").blur(function(){
-		var userPass2=$("#pass2").find("input").val();
-		if($("#pass").find("input").val()==userPass2){
-			$("#msgpass2")[0].innerHTML="请填写下一步";
+    $("#p2").blur(function(){
+		var userPass2=$("#p2").val();
+		if($("#p1").val()==userPass2){
+			$("#msgpass2")[0].innerHTML=" ";
 			check4=true;
 		}else{
 			$("#msgpass2")[0].innerHTML="两次输入密码不一致";

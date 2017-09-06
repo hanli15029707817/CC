@@ -1,163 +1,148 @@
-#logo-all2{
-	width:100%;
-	overflow: hidden;
-	background: url(../img/login-create-bg_080717.jpg) no-repeat;
-	background-size:cover;
-}
-#logoin{
-	background:#fff;
-    width:50%;
-    margin:5% auto;
-    padding:32px 16px 27px;
-}
-#logoin p:first-child{
-    font-size: 28px;
+#logo-all2 {
+  width: 100%;
+  overflow: hidden;
+  background: url(../img/login-create-bg_080717.jpg) no-repeat;
+  background-size: cover; }
+
+#logoin {
+  background: #fff;
+  width: 50%;
+  margin: 5% auto;
+  padding: 32px 16px 27px; }
+
+#logoin p:first-child {
+  font-size: 28px;
+  color: #3f3f3f;
+  text-align: center;
+  line-height: 39px;
+  padding-bottom: 10px; }
+
+#logoin p:nth-child(2) {
+  font-size: 12px;
+  color: #3f3f3f;
+  text-align: center;
+  padding-bottom: 10px; }
+
+#logoin form {
+  width: 100%;
+  max-width: 450px;
+  margin: 16px auto; }
+
+#logoin form label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 0 0 8px;
+  color: #7e7e7e;
+  text-align: left; }
+
+#logoin form span {
+  display: block;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
+  color: red; }
+
+#logoin form input {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 450px;
+  border-radius: 4px;
+  border: 1px solid #adadad;
+  padding: 7px 10px; }
+
+#username {
+  width: 100%;
+  padding-bottom: 16px; }
+
+#emial {
+  width: 100%;
+  padding-bottom: 16px; }
+
+#pass {
+  width: 100%;
+  padding-bottom: 20px; }
+
+#logoin p:nth-child(4) {
+  font-size: 16px;
+  color: #3f3f3f;
+  padding-bottom: 30px;
+  text-align: left;
+  padding-left: 92px; }
+
+#cheack-box {
+  position: relative; }
+
+#cheack-box span {
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin: .625em .625em 0 .625em;
+  /*background: url(../img/checkbox-active.svg) no-repeat 0 0;*/
+  background-size: 10px;
+  background-position: -16px 0;
+  border: 1px solid #adadad;
+  text-align: center;
+  margin: 0 1em 0 -2.5em;
+  position: absolute;
+  top: -3px;
+  left: 131px; }
+
+#cheack-box p {
+  padding-left: 70px; }
+
+#logoin input:last-child {
+  width: 100%;
+  background: #ff3b7c;
+  padding: 12px 10px;
+  border: 0;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  max-width: 450px; }
+
+#logoin input:last-child:hover {
+  background: #ee004f; }
+
+@media only screen and (min-width: 640px) and (max-width: 1022px) {
+  #logo-all2 {
+    background: none; }
+
+  #logoin {
+    width: 100%;
+    padding: 32px 10px 27px;
+    box-sizing: border-box; }
+
+  #creat {
+    width: 100%; }
+
+  #logoin p:nth-child(4) {
+    font-size: 16px;
     color: #3f3f3f;
+    padding-bottom: 30px;
     text-align: center;
-    line-height: 39px;
-    padding-bottom: 10px;
-}
-#logoin p:nth-child(2){
+    padding-left: 0px; }
+
+  #cheack-box span {
+    margin: 0 16px 0 -40px; }
+
+  #cheack-box p {
+    padding-left: 0px; }
+
+  #logoin p:nth-child(2) {
     font-size: 12px;
     color: #3f3f3f;
     text-align: center;
     padding-bottom: 10px;
-}
-#logoin form{
-	width: 100%;
-    max-width: 450px;
-    margin: 16px auto;
-}
-#logoin form label{
-	display: block;
-	font-size: 12px;
-    letter-spacing: 2px;
-    margin: 0 0 8px;
-    color: #7e7e7e;
-    text-align: left;
-}
-#logoin form span{
-	display: block;
-	width:100%;
-	padding-top:8px;
-	padding-bottom:8px;
-	font-size:12px;
-	color:red;
-}
-#logoin form input{
-	width: 100%;
-	box-sizing: border-box;
-    max-width: 450px;
-    border-radius: 4px;
-    border:1px solid #adadad;
-    padding:7px 10px;
-    
-}
-#username{
-	width:100%;
-	padding-bottom:16px;
-}
-#emial{
-	width:100%;
-	padding-bottom:16px;
-}
-#pass{
-	width:100%;
-	padding-bottom:20px;
-}
-#logoin p:nth-child(4){
-	font-size:16px;
-	color:#3f3f3f;
-	padding-bottom: 30px;
-	text-align: left;
-	padding-left: 92px;
-}
-#cheack-box{
-	position:relative;
-}
-#cheack-box span{
-	display: block;
-	height: 20px;
-    width: 20px;
-    margin: .625em .625em 0 .625em;
-    /*background: url(../img/checkbox-active.svg) no-repeat 0 0;*/
-    background-size: 10px;
-    background-position: -16px 0;
-    border: 1px solid #adadad;
-    text-align: center;
-    margin: 0 1em 0 -2.5em;
-    position:absolute;
-    top:-3px;
-    left:131px;
-}
-#cheack-box p{
-	padding-left:70px;
-}
-#logoin input:last-child{
-	width:100%;
-	background:#ff3b7c;
-	padding:12px 10px;
-	border: 0;
-	color:#fff;
-   margin: 0 auto;
-   display: block;
-   max-width: 450px;
-}
-#logoin input:last-child:hover{
-	background:#ee004f;
-}
-
-@media only screen and (min-width: 640px) and (max-width:1022px){
-	#logo-all2{
-		background:none;
-	}
-    #logoin{
-    width:100%;
-    padding:32px 10px 27px;
-    box-sizing: border-box;
-    }
-   #creat{
-	width:100%;
-   }
-  #logoin p:nth-child(4){
-	font-size:16px;
-	color:#3f3f3f;
-	padding-bottom: 30px;
-	text-align: center;
-	padding-left: 0px;
-    }
-   #cheack-box span{
-    margin: 0 16px 0 -40px;
-
- 
-	}
-	#cheack-box p{
-		padding-left:0px;
-	}
-	   
-   #logoin p:nth-child(2){
-    font-size: 12px;
-    color: #3f3f3f;
-    text-align: center;
-    padding-bottom: 10px;
-    padding-left:30px;
-    }
-   
-   
-   
-   
-   
-   
-   
-}
-
+    padding-left: 30px; } }
 @media only screen and (max-width: 639px) {
-	#logo-all2{
-		background:none;
-	}
-     #logoin{
-    width:100%;
-    padding:32px 10px 27px;
-    box-sizing: border-box;
-    }
-}
+  #logo-all2 {
+    background: none; }
+
+  #logoin {
+    width: 100%;
+    padding: 32px 10px 27px;
+    box-sizing: border-box; } }
+
+/*# sourceMappingURL=zhuce.css.map */

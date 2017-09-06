@@ -18,26 +18,24 @@ window.onload=function(){
 			$("#msgPass")[0].innerHTML="请输入一个6位数字的密码";
 		}
    }); 
-}
-
-
-$(function(){
-	$("#btnLogoin").click(function(){
-		$.post("logoinCheck.php",
+   $("#denglu").click(function(){
+		$.post("../php/logoinCheck.php",
 		      {
-		      	"userPhone":$("#emial").find("input").val(),
+		      	"useremail":$("#emial").find("input").val(),
 		      	"userPass":$("#pass").find("input").val()
 		      },
-		      function(str){
-		      	if(str=="1"){
-		      		
+		      function(data){
+		      	if(data=="1"){  //登录成功
+		      		//记录cookie
+		      		addCookie("userId",$("#emial").find("input").val(),7);
+		      		location.href="index.html";
+		      	}else{
+		      		alert("登录失败，用户名或者密码不对！");
 		      	}
 		      }
 		)
 	})
-});
-
-
+}
 
 
 
